@@ -10,7 +10,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 class Config:
-    BASE_DIR = os.getenv('PIPELINE_BASE_DIR', '/Users/airscholar/PycharmProjects/SelfHealingPipeline')
+
+    BASE_DIR = os.getenv('PIPELINE_BASE_DIR', '/Users/hridayjain/Documents/Projects/SelfHealingPipeline')
     INPUT_FILE = os.getenv('PIPELINE_INPUT_FILE',
                            f'{BASE_DIR}/input/yelp_academic_dataset_review.json')
     OUTPUT_DIR = os.getenv('PIPELINE_OUTPUT_DIR',
@@ -27,7 +28,7 @@ class Config:
     OLLAMA_RETRIES = int(os.getenv('OLLAMA_RETRIES', 3))
 
 default_args = {
-    'owner': 'Yusuf Ganiyu',
+    'owner': 'Hriday Jain',
     'depends_on_past': False,
     'retries': 2,
     'retry_delay': timedelta(minutes=1),

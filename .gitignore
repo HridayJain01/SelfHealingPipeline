@@ -5,3 +5,24 @@ __pycache__/
 .DS_Store
 .idea/
 *.log
+output
+input
+# Environments
+.venv/
+venv/
+ENV/
+
+# Airflow local runtime files
+airflow.db
+airflow.db-shm
+airflow.db-wal
+airflow.cfg
+logs/
+simple_auth_manager_passwords.json*
+
+# Pipeline data
+input/
+output/
+
+# OS files
+.DS_Store
